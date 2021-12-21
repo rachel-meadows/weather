@@ -207,7 +207,7 @@ async function getWeatherDataFromAPI(locationToDisplay) {
 
     // Get details on CURRENT weather
     try {
-        let currentResponse = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${locationToDisplay}&APPID=34e4d38b468e06f31319903dfdd2b111&units=metric`,
+        let currentResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${locationToDisplay}&APPID=34e4d38b468e06f31319903dfdd2b111&units=metric`,
         {mode: 'cors'});
         let currentWeatherData = await currentResponse.json();
 
