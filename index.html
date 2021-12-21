@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="outerContainer">
+
+        <form>
+            <input type="text" name="location" id="location" placeholder="Choose location">
+            <button type="submit">Search</button>
+        </form>
+
+        <h1 id="currentLocation"></h1>
+
+        <div id="weatherBox">
+            <img id="weatherIcon">
+            <div id="weatherText"> 
+            </div>
+        </div>
+
+        <div id="temperatureBox">
+            <div id="temperature">
+            </div>
+            <div id="temperatureDetails">
+                <div id="temperatureHigh"></div>
+                <div id="temperatureLow"></div>
+                <div id="humidity"></div>
+            </div>
+        </div>
+
+        <div id="windBox">
+            <div id="windSpeed">
+            </div>
+            <div id="windDirection">
+            </div>
+        </div>
+
+        <div id="weeklyForecastBox">
+            <div id="day1" class="forecastDay hidden">
+                <div id="date1" class="forecastDate"></div>
+                <div id="day1temperature" class="forecastWeatherTemperature"></div>
+                <div class="forecastWeatherContainer">
+                    <img id="day1weatherIcon">
+                    <div id="day1weather"></div>
+                </div>
+                <div id="day1rainChance"></div>
+            </div>
+            <div id="day2" class="forecastDay hidden">
+                <div id="date2" class="forecastDate"></div>
+                <div id="day2temperature" class="forecastWeatherTemperature"></div>
+                <div class="forecastWeatherContainer">
+                    <img id="day2weatherIcon">
+                    <div id="day2weather"></div>
+                </div>
+                <div id="day2rainChance"></div>
+            </div>
+            <div id="day3" class="forecastDay hidden">
+                <div id="date3" class="forecastDate"></div>
+                <div id="day3temperature" class="forecastWeatherTemperature"></div>
+                <div class="forecastWeatherContainer">
+                    <img id="day3weatherIcon">
+                    <div id="day3weather"></div>
+                </div>
+                <div id="day3rainChance"></div>
+            </div>
+            <div id="day4" class="forecastDay hidden">
+                <div id="date4" class="forecastDate"></div>
+                <div id="day4temperature" class="forecastWeatherTemperature"></div>
+                <div class="forecastWeatherContainer">
+                    <img id="day4weatherIcon">
+                    <div id="day4weather"></div>
+                </div>
+                <div id="day4rainChance"></div>
+            </div>
+            <div id="day5" class="forecastDay hidden">
+                <div id="date5" class="forecastDate"></div>
+                <div id="day5temperature" class="forecastWeatherTemperature"></div>
+                <div class="forecastWeatherContainer">
+                    <img id="day5weatherIcon">
+                    <div id="day5weather"></div>
+                </div>
+                <div id="day5rainChance"></div>
+            </div>
+            <div id="day6" class="forecastDay hidden">
+                <div id="date6" class="forecastDate"></div>
+                <div id="day6temperature" class="forecastWeatherTemperature"></div>
+                <div class="forecastWeatherContainer">
+                    <img id="day6weatherIcon">
+                    <div id="day6weather"></div>
+                </div>
+                <div id="day6rainChance"></div>
+            </div>
+            <div id="day7" class="forecastDay hidden">
+                <div id="date7" class="forecastDate"></div>
+                <div id="day7temperature" class="forecastWeatherTemperature"></div>
+                <div class="forecastWeatherContainer">
+                    <img id="day7weatherIcon">
+                    <div id="day7weather"></div>
+                </div>
+                <div id="day7rainChance"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

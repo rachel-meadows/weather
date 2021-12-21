@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    padding: 5px;
+}
+
+#outerContainer {
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border: rgba(32, 32, 32, 0.6) 2px solid;
+    background-color: rgba(0, 135, 168, 0.5);
+    padding: 10px;
+    min-width: 30vw;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 3px;
+}
+
+#location {
+    min-width: 20vw;
+    padding-left: 10px;
+    color: rgb(94, 94, 94);
+}
+
+#currentLocation {
+    font-size: 4rem;
+}
+
+#weatherBox {
+    display: flex;
+    align-items: center;
+}
+
+#weatherIcon {
+    height: 200%;
+    width: auto;
+}
+
+#weatherText {
+    font-size: 1.5rem;
+}
+
+#temperatureBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#temperatureDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+#windBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#weeklyForecastBox {
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.forecastDate {
+    text-align: center;
+    font-weight: 600;
+}
+
+.forecastWeatherContainer {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.forecastWeatherTemperature {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.forecastDay {
+    padding: 10px;
+    border-radius: 7px;
+    border: rgba(32, 32, 32, 0.6) 2px solid;
+    background-color: rgba(121, 121, 121, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+.loadingGif {
+    position: absolute;
+    z-index: 100;
+}
