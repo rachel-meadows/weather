@@ -11,8 +11,16 @@ body {
     background-size: cover;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 button {
-    padding: 5px;
+    padding: 15px 30px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #outerContainer {
@@ -27,18 +35,26 @@ button {
 }
 
 form {
-    border: rgba(32, 32, 32, 0.6) 2px solid;
-    background-color: rgba(0, 135, 168, 0.5);
     padding: 10px;
-    min-width: 30vw;
+    min-width: 40vw;
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     border-radius: 3px;
 }
 
-#location {
-    min-width: 20vw;
+form > input, form > button {
+    font-size: 1.3rem;
+}
+
+.location {
+    width: 35vw;
+    padding-left: 10px;
+    color: rgb(94, 94, 94);
+}
+
+.location--horizontal {
+    width: 15vw;
     padding-left: 10px;
     color: rgb(94, 94, 94);
 }
@@ -98,6 +114,7 @@ form {
 .forecastWeatherContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 3px;
 }
 
@@ -110,8 +127,13 @@ form {
 .forecastDay {
     padding: 10px;
     border-radius: 7px;
-    border: rgba(32, 32, 32, 0.6) 2px solid;
-    background-color: rgba(121, 121, 121, 0.5);
+    border: rgba(5, 37, 142, 0.5) 2px solid;
+    background-color: rgba(168, 168, 168, 0.5);
+    height: 100%;
+}
+
+.rainChance {
+    text-align: center;
 }
 
 .hidden {
@@ -121,4 +143,51 @@ form {
 .loadingGif {
     position: absolute;
     z-index: 100;
+}
+
+.highestElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.highestElement--horizontal {
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.highestElement__left {
+    gap: 5px;
+    justify-content: left;
+}
+
+.highestElement__left, .highestElement__right {
+    flex: 1;
+}
+
+.highestElement__left > input, .highestElement__left > button {
+    font-size: 1rem;
+    padding: 5px 11px;
+    opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+    .highestElement--horizontal {
+        flex-direction: column;
+    }
+
+    .highestElement__left > input {
+        width: 60vw;
+    }
+
+    #weeklyForecastBox {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .forecastDay {
+        min-width: 70vw;
+    }
 }

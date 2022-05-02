@@ -11,12 +11,16 @@
 <body>
     <div id="outerContainer">
 
-        <form>
-            <input type="text" name="location" id="location" placeholder="Choose location">
-            <button type="submit">Search</button>
-        </form>
+        <div class="highestElement">
+            <h1>What's the weather?</h1>
+            <form class="highestElement__left">
+                <input type="text" name="location" class="location" placeholder="Choose location">
+                <button type="submit">Search</button>
+            </form>
 
-        <h1 id="currentLocation"></h1>
+            <h1 id="currentLocation"></h1>
+            <div class="highestElement__right"></div>
+        </div>
 
         <div id="weatherBox">
             <img id="weatherIcon">
@@ -49,7 +53,7 @@
                     <img id="day1weatherIcon">
                     <div id="day1weather"></div>
                 </div>
-                <div id="day1rainChance"></div>
+                <div id="day1rainChance" class="rainChance"></div>
             </div>
             <div id="day2" class="forecastDay hidden">
                 <div id="date2" class="forecastDate"></div>
@@ -58,7 +62,7 @@
                     <img id="day2weatherIcon">
                     <div id="day2weather"></div>
                 </div>
-                <div id="day2rainChance"></div>
+                <div id="day2rainChance" class="rainChance"></div>
             </div>
             <div id="day3" class="forecastDay hidden">
                 <div id="date3" class="forecastDate"></div>
@@ -67,7 +71,7 @@
                     <img id="day3weatherIcon">
                     <div id="day3weather"></div>
                 </div>
-                <div id="day3rainChance"></div>
+                <div id="day3rainChance" class="rainChance"></div>
             </div>
             <div id="day4" class="forecastDay hidden">
                 <div id="date4" class="forecastDate"></div>
@@ -76,7 +80,7 @@
                     <img id="day4weatherIcon">
                     <div id="day4weather"></div>
                 </div>
-                <div id="day4rainChance"></div>
+                <div id="day4rainChance" class="rainChance"></div>
             </div>
             <div id="day5" class="forecastDay hidden">
                 <div id="date5" class="forecastDate"></div>
@@ -85,7 +89,7 @@
                     <img id="day5weatherIcon">
                     <div id="day5weather"></div>
                 </div>
-                <div id="day5rainChance"></div>
+                <div id="day5rainChance" class="rainChance"></div>
             </div>
             <div id="day6" class="forecastDay hidden">
                 <div id="date6" class="forecastDate"></div>
@@ -94,7 +98,7 @@
                     <img id="day6weatherIcon">
                     <div id="day6weather"></div>
                 </div>
-                <div id="day6rainChance"></div>
+                <div id="day6rainChance" class="rainChance"></div>
             </div>
             <div id="day7" class="forecastDay hidden">
                 <div id="date7" class="forecastDate"></div>
@@ -103,7 +107,7 @@
                     <img id="day7weatherIcon">
                     <div id="day7weather"></div>
                 </div>
-                <div id="day7rainChance"></div>
+                <div id="day7rainChance" class="rainChance"></div>
             </div>
         </div>
 
